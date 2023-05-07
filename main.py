@@ -38,5 +38,5 @@ if args.output_file.endswith("." + formats[output_format]):
 else:
     output_file = args.output_file + "." + formats[output_format]
 
-with open(args.input_file, 'r') as f:
+with open(args.input_file, "r") as f:
     input_data = f.read()
