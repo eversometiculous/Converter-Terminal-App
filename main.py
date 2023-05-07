@@ -8,4 +8,9 @@ import html2text
 
 # Create the formats with their extensions
 
+FORMATS = {
+    'markdown': 'md',
+    'html': 'html',
+    'pdf': 'pdf'
+}
 
