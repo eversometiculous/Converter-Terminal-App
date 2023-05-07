@@ -30,3 +30,10 @@ for format, ext in formats.items():
 
 if input_format is None:
     raise ValueError(f"Unsupported input file format: {args.input_file}")
+
+output_format = args.output_format
+
+if args.output_file.endswith("." + formats[output_format]):
+    output_file = args.output_file
+else:
+    output_file = args.output_file + "." + formats[output_format]
