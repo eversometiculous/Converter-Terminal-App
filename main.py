@@ -61,3 +61,6 @@ elif input_format == "html" and output_format == "pdf":
     pdfkit.from_string(input_data, output_file)
 else:
     raise ValueError(f"Unsupported conversion: {input_format} to {output_format}")
+
+with open(output_file, "w") as f:
+    f.write(output_data)
