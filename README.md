@@ -19,3 +19,23 @@ From Markdown to PDF or HTML - This feature will be implemented by taking the us
 
 Created using Trello by Atlassian. Link is here: https://trello.com/b/GADGv6cv/converter-app
 
+### PDF to HTML or Markdown Task
+
+![PDF to HTML or MD Trello Task Part 1](docs/Photo1Trello.jpeg)
+
+![PDF to HTML or MD Trello Task Part 2](docs/Photo2Trello.jpeg)
+
+### HTML to PDF to Markdown Task
+
+![HTML to PDF or MD Trello Task Part 1](docs/Photo3Trello.jpeg)
+
+![HTML to PDF or MD Trello Task Part 2](docs/Photo4Trello.jpeg)
+
+### Markdown to HTML or PDF Task
+
+![MD to HTML or PDF Trello Task Part 1](docs/Photo5Trello.jpeg)
+
+![MD to HTML or PDF Trello Task Part 2](docs/Photo6Trello.jpeg)
+
+
+
