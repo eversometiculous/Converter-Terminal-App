@@ -55,3 +55,9 @@ elif input_format == "pdf" and output_format == "html":
         pdf = PyPDF2.PdfFileReader(f)
         output_data = "<br>".join([pdf.getPage(i).extractText() for i in range(pdf.getNumPages())])
     output_data = f"<html><body>{output_data}</body></html>"
+elif input_format == "html" and output_format == "markdown":
+    output_data = html2text.html2text(input_data)
+elif input_format == "html" and output_format == "pdf":
+    pdfkit.from_string(input_data, output_file)
+else:
+    raise ValueError(f"Unsupported conversion: {input_format} to {output_format}")
