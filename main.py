@@ -45,3 +45,13 @@ if input_format == "markdown" and output_format == "html":
     output_data = markdown.markdown(input_data)
 elif input_format == "markdown" and output_format == "pdf":
     output_data = pdfkit.from_string(markdown.markdown(input_data), False)
+elif input_format == "pdf" and output_format == "markdown":
+    with open(args.input_file, "rb") as f:
+        pdf = PyPDF2.PdfFileReader(f)
+        output_data = "\n".join([pdf.getPage(i).extractText() for i in range(pdf.getNumPages())])
+    output_data = html2text.html2text(output_data)
+elif input_format == "pdf" and output_format == "html":
+    with open(args.input_file, "rb") as f:
+        pdf = PyPDF2.PdfFileReader(f)
+        output_data = "<br>".join([pdf.getPage(i).extractText() for i in range(pdf.getNumPages())])
+    output_data = f"<html><body>{output_data}</body></html>"
