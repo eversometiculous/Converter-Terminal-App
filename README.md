@@ -61,7 +61,7 @@ pip3 --version
 A pip version should appear.
 
 4. Once pip is installed, you need to install some packages. Using terminal, type:
-pip install argparse markdown pdfkit PyPDF2 html2text pytest
+pip3 install argparse markdown pdfkit PyPDF2 html2text pytest
 
 5. To use this application, on command or terminal, type:
 python3 converter.py input_file output_format output_file
@@ -78,16 +78,16 @@ Note that you don't need to include the file extension in output_file – the sc
 Here are some example commands to test the tool:
 
 Convert a Markdown file to HTML:
-python converter.py my_file.md html my_file.html
+python3 converter.py my_file.md html my_file.html
 
 Convert a Markdown file to PDF:
-python converter.py my_file.md pdf my_file.pdf
+python3 converter.py my_file.md pdf my_file.pdf
 
 Convert a PDF file to Markdown:
-python converter.py my_file.pdf markdown my_file.md
+python3 converter.py my_file.pdf markdown my_file.md
 
 Convert an HTML file to PDF:
-python converter.py my_file.html pdf my_file.pdf
+python3 converter.py my_file.html pdf my_file.pdf
 
 Make sure to replace my_file with the actual name of the file you want to convert. Also, note that the output file will be saved in the same directory as the input file, unless you specify a different directory in the output_file path.
 
