@@ -40,3 +40,8 @@ else:
 
 with open(args.input_file, "r") as f:
     input_data = f.read()
+
+if input_format == "markdown" and output_format == "html":
+    output_data = markdown.markdown(input_data)
+elif input_format == "markdown" and output_format == "pdf":
+    output_data = pdfkit.from_string(markdown.markdown(input_data), False)
