@@ -91,6 +91,8 @@ python3 converter.py my_file.html pdf my_file.pdf
 
 Make sure to replace my_file with the actual name of the file you want to convert. Also, note that the output file will be saved in the same directory as the input file, unless you specify a different directory in the output_file path.
 
+There will also be a slide deck presentation to show how the application works.
+
 Acknowledgements
 Document Converter was created by Nasir Ruslan as a project for STD-WD-FEB-2023. It was inspired by my friend, Fabio.
 
