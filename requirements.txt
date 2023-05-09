@@ -1,0 +1,9 @@
+argparse==1.4.0
+markdown==3.4.3
+pdfkit==1.0.0
+PyPDF2==2.12.1
+html2text==2020.1.16
+iniconfig==2.0.0
+packaging==23.1
+pluggy==1.0.0
+pytest==7.3.1
