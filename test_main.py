@@ -2,14 +2,13 @@ import os
 import pytest
 import subprocess
 
-# Test the main.py script
 def test_main():
-    # Define test input and output files
-    input_file = 'test.pdf'
-    output_file = 'test1.html'
+
+    input_file = "test.pdf"
+    output_file = "test1.html"
 
     # Run the main.py script with the test input and output files
-    subprocess.run(['python', 'main.py', input_file, 'html', output_file])
+    subprocess.run(["python", "main.py", input_file, "html", output_file])
 
     # Check if the output file was created
     assert os.path.exists(output_file)

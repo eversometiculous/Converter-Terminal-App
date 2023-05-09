@@ -5,11 +5,11 @@ import subprocess
 # Test the main.py script
 def test_main():
     # Define test input and output files
-    input_file = 'test2.pdf'
-    output_file = 'test2.md'
+    input_file = "test2.pdf"
+    output_file = "test2.md"
 
     # Run the main.py script with the test input and output files
-    subprocess.run(['python', 'main.py', input_file, 'markdown', output_file])
+    subprocess.run(["python", "main.py", input_file, "markdown", output_file])
 
     # Check if the output file was created
     assert os.path.exists(output_file)

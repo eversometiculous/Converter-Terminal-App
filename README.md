@@ -61,7 +61,7 @@ pip3 --version
 A pip version should appear.
 
 4. Once pip is installed, you need to install some packages. Using terminal, type:
-pip3 install argparse markdown pdfkit PyPDF2 html2text pytest
+pip3 install argparse markdown pdfkit PyPDF2==2.12.1 html2text pytest
 
 5. To use this application, on command or terminal, type:
 python3 converter.py input_file output_format output_file
