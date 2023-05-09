@@ -14,6 +14,7 @@ formats = {
     'pdf': 'pdf'
 }
 
+# Define the command-line arguments
 parser = argparse.ArgumentParser(description="Converts between document formats") #default coding for argparse
 parser.add_argument("input_file", help="the input file name to convert")
 parser.add_argument("output_format", choices=formats.keys(), help="the output format or extension you want")
@@ -22,6 +23,7 @@ parser.add_argument("output_file", help="the output file name")
 
 args = parser.parse_args() # Default coding for argparse
 
+# Determine the input format based on the file extension
 input_format = None
 for format, ext in formats.items():
     if args.input_file.endswith("." + ext):
@@ -31,6 +33,7 @@ for format, ext in formats.items():
 if input_format is None:
     raise ValueError(f"Unsupported input file format: {args.input_file}")
 
+# Determine the output format based on the file extension
 output_format = args.output_format
 
 if args.output_file.endswith("." + formats[output_format]):
@@ -38,9 +41,11 @@ if args.output_file.endswith("." + formats[output_format]):
 else:
     output_file = args.output_file + "." + formats[output_format]
 
+# Read the input file
 with open(args.input_file, "rb") as f:
     input_data = f.read()
 
+# Convert the input data to the desired output format
 if input_format == "markdown" and output_format == "html":
     output_data = markdown.markdown(input_data)
 elif input_format == "markdown" and output_format == "pdf":
@@ -62,5 +67,6 @@ elif input_format == "html" and output_format == "pdf":
 else:
     raise ValueError(f"Unsupported conversion: {input_format} to {output_format}")
 
+# Write the output file
 with open(output_file, "w") as f:
     f.write(output_data)

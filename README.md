@@ -37,6 +37,9 @@ Created using Trello by Atlassian. Link is here: https://trello.com/b/GADGv6cv/c
 
 ![MD to HTML or PDF Trello Task Part 2](docs/Photo6Trello.jpeg)
 
+## Slide deck
+Link here: https://docs.google.com/presentation/d/1EV9QfWkkGVZGXN_p5IEcXDJnvysHrmGtkwb2LpsqzhM/edit?usp=sharing
+
 ## How to use this converter terminal application
 
 ### Steps

@@ -3,7 +3,7 @@ import pytest
 import subprocess
 
 def test_main():
-
+    # Define test input and output files
     input_file = "test.pdf"
     output_file = "test1.html"
 
@@ -16,5 +16,4 @@ def test_main():
     # Check if the output file is not empty
     assert os.path.getsize(output_file) > 0
 
-    # Clean up the output file after the test
     os.remove(output_file)

@@ -2,7 +2,6 @@ import os
 import pytest
 import subprocess
 
-# Test the main.py script
 def test_main():
     # Define test input and output files
     input_file = "test2.pdf"
@@ -17,5 +16,4 @@ def test_main():
     # Check if the output file is not empty
     assert os.path.getsize(output_file) > 0
 
-    # Clean up the output file after the test
     os.remove(output_file)
